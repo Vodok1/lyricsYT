@@ -1,5 +1,6 @@
 const submit = document.getElementById("submit");
-submit.addEventListener("click", () => {
+submit.addEventListener("click", (e) => {
+  e.preventDefault();
   const artist = document.getElementById("artistinput").value;
   const title = document.getElementById("titleinput").value;
   getLyrics(artist, title);

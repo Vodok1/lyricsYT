@@ -12,6 +12,7 @@ function getVideo(artistInput, titleInput) {
     },
     success: function (data) {
       embedVideo(data);
+      console.log(data);
     },
     error: function (jqXHR, textStatus, errorThrown) {
       console.log(jqXHR);
@@ -20,7 +21,7 @@ function getVideo(artistInput, titleInput) {
 }
 function embedVideo(data) {
   console.log(data.items[0].id.videoId);
-  console.log(data.items[0].id.duration);
+  console.log(data.items[0].duration);
   let videoDuration = data.items[0].id.duration;
   $("iframe").attr(
     "src",
