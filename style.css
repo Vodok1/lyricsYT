@@ -67,6 +67,7 @@ button:hover {
   color: white;
 }
 .hero {
+  padding: 1rem 0;
   width: 100%;
   margin: 50px 0;
   position: relative;
@@ -79,7 +80,8 @@ button:hover {
   box-shadow: 15px 15px 100px 0px rgba(255, 255, 255, 0.75);
   border: none;
   position: sticky;
-  margin: 150px 150px 0 150px;
+  left: 25%;
+  transform: translateX(-25%);
   top: 150px;
   width: 500px;
   height: 300px;
