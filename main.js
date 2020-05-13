@@ -7,8 +7,7 @@ submit.addEventListener("click", (e) => {
   getVideo(artist, title);
   document.getElementById("titleinput").value = "";
   document.getElementById("artistinput").value = "";
-  $("html, body").animate(
-    { scrollTop: $(document).height() - $(window).height() },
-    videoDuration
-  );
+});
+$("html,body").scroll(function () {
+  $(this).stop(true, false);
 });
