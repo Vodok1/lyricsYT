@@ -80,6 +80,7 @@ function embedVideo(data) {
   );
   $("html, body").animate(
     { scrollTop: $(document).height() - $(window).height() },
-    videoDuration
+    videoDuration,
+    "linear"
   );
 }
