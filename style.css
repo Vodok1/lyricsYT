@@ -73,6 +73,7 @@ button:hover {
   grid-template-columns: 8% 1fr 1fr 8%;
 }
 .hero iframe {
+  box-shadow: 15px 15px 100px 0px rgba(255, 255, 255, 0.75);
   border: none;
   position: sticky;
   margin: 150px 150px 0 150px;
@@ -81,7 +82,9 @@ button:hover {
   height: 300px;
 }
 .lyrics {
+  z-index: 999;
   font-size: 2rem;
   text-align: center;
   grid-column: 3/4;
+  line-height: 1.9rem;
 }
