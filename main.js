@@ -9,6 +9,12 @@ submit.addEventListener("click", (e) => {
   getVideo(artist, title);
   document.getElementById("titleinput").value = "";
   document.getElementById("artistinput").value = "";
+  $(".hero iframe, .lyrics").animate(
+    {
+      opacity: 1,
+    },
+    3000
+  );
 });
 //stop autoscroll after user interact
 $("body,html").bind(

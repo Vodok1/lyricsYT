@@ -67,12 +67,15 @@ button:hover {
   color: white;
 }
 .hero {
+  width: 100%;
   margin: 50px 0;
   position: relative;
   display: grid;
   grid-template-columns: 8% 1fr 1fr 8%;
+  transition: all 3s ease;
 }
 .hero iframe {
+  opacity: 0;
   box-shadow: 15px 15px 100px 0px rgba(255, 255, 255, 0.75);
   border: none;
   position: sticky;
@@ -80,8 +83,11 @@ button:hover {
   top: 150px;
   width: 500px;
   height: 300px;
+  transition: all 3s ease;
 }
 .lyrics {
+  opacity: 0;
+  transform: translateX();
   z-index: 999;
   font-size: 2rem;
   text-align: center;
