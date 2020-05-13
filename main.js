@@ -1,4 +1,6 @@
 const submit = document.getElementById("submit");
+
+$("iframe").attr("src", ""); //czyszczenie filmu
 submit.addEventListener("click", (e) => {
   e.preventDefault();
   const artist = document.getElementById("artistinput").value;
