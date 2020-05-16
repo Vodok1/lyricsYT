@@ -3,7 +3,7 @@ function getVideo(artistInput, titleInput) {
     type: "GET",
     url: "https://www.googleapis.com/youtube/v3/search",
     data: {
-      key: "#enterAPIKEY",
+      key: "AIzaSyDNbGaj7BGIuBatl5UCv06rn82yjkedyJY",
       q: `${artistInput} ${titleInput}`,
       part: "snippet",
       maxResults: 1,
